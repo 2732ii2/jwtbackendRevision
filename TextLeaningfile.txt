@@ -1,0 +1,9 @@
+Authentication
+
+
+Slightly are better way :-
+
+
+1. Give a user back the token at signup or sign-in
+2. Ask the user to send back the token at the all the future request
+3. When user logs out, ask to user to forget the token, or revoke it from the backend.
