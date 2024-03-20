@@ -6,6 +6,8 @@ import bcrypt from "bcrypt";
 const secretKey="bilalabbas";
 
 
+var Port=4000 || process.env.Port;
+
 const app=express();
 app.use(express.json());
 
@@ -74,4 +76,6 @@ app.post("/user",(req,res)=>{
 //         res.json({err:err.message});
 //     }
 // })
-app.listen(4000);
+app.listen(Port,()=>{
+    console.log("connected");
+});
